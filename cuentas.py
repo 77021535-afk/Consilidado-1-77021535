@@ -85,3 +85,15 @@ class CuentaCorriente(CuentaBancaria):
     )
 
 
+ahorro = CuentaAhorros(
+      "AH-1001", "María Pérez", tasa_interes=4.5, saldo_inicial=1000.0
+  )
+ahorro.depositar(500.0)
+print(ahorro)
+
+ 
+corriente = CuentaCorriente(
+      "CC-2002", "Juan Gómez", limite_sobregiro=500.0, saldo_inicial=200.0
+  )
+corriente.retirar(400.0)  # Saldo resulta en -200.0
+print(corriente)
