@@ -17,4 +17,7 @@ class Planeta:
     self.distancia_al_sol = distancia_al_sol
     self.tiene_vida = tiene_vida
 
-
+def calcular_densidad(self) -> float:
+    """Calcula la densidad media en kg/m^3."""
+    volumen = (4 / 3) * math.pi * (self.radio**3)
+    return self.masa / volumen
