@@ -21,3 +21,8 @@ def calcular_densidad(self) -> float:
     """Calcula la densidad media en kg/m^3."""
     volumen = (4 / 3) * math.pi * (self.radio**3)
     return self.masa / volumen
+
+def es_planeta_exterior(self) -> bool:
+    """Determina si el planeta está a más de 5.2 UA del Sol."""
+    return self.distancia_al_sol > 5.2
+
